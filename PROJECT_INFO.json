@@ -1,0 +1,32 @@
+{
+  "project_id": 24,
+  "repo_name": "024-contract-clause-search-engine",
+  "title": "Contract Clause Search Engine",
+  "theme": "Document Intelligence & RAG",
+  "theme_id": "T03",
+  "level": 2,
+  "level_label": "Applied Intelligence",
+  "prototype_status": "research prototype",
+  "primary_description": "Contract passage retrieval",
+  "research_question_proposed": "How precisely can clause retrieval locate legally relevant passages without offering legal conclusions?",
+  "sample_files": [
+    "sample_contracts/sample_agreement.txt"
+  ],
+  "source_modules": [
+    "src/clause_search.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/clause_search.py index sample_contracts --index-dir outputs/index",
+    "python src/clause_search.py search outputs/index \"termination for material breach\" --top-k 5"
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level2-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}

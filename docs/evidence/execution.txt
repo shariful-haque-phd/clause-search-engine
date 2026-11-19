@@ -1,0 +1,17 @@
+$ python src/clause_search.py index sample_contracts --index-dir outputs/index
+(completed; no standard output)
+
+
+$ python src/clause_search.py search outputs/index "termination for material breach" --top-k 5
+Score 0.490 | sample_contracts/sample_agreement.txt | passage 2
+Either party may terminate this agreement for material breach if the breach is not cured within thirty days after written notice.
+
+Score 0.000 | sample_contracts/sample_agreement.txt | passage 4
+The supplier will retain project records for three years after completion.
+
+Score 0.000 | sample_contracts/sample_agreement.txt | passage 3
+Each party must protect confidential information using reasonable safeguards and may use that information only for the purposes of this agreement.
+
+Score 0.000 | sample_contracts/sample_agreement.txt | passage 1
+The supplier will provide the services described in Schedule A.
+

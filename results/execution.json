@@ -1,0 +1,24 @@
+{
+  "id": "024",
+  "status": "executed",
+  "commands": [
+    "python src/clause_search.py index sample_contracts --index-dir outputs/index",
+    "python src/clause_search.py search outputs/index \"termination for material breach\" --top-k 5"
+  ],
+  "elapsed_seconds": 6.67,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample_contracts/sample_agreement.txt",
+      "sha256": "ff391486ae75139e37c6f80b8afdc8b300e60cdc6b1441ce4d6a48d00eeb5f9f"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "3f1738a81a2486145ca7180b480f6310b538e8c54929316178a9a54b2c46d0a9",
+      "bytes": 884
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}
